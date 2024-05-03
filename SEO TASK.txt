@@ -1,0 +1,27 @@
+Here is a list of sections in the course:
+
+Intro + Demo ✅
+Setup and Installation ✅
+Tailwind CSS Setup, Dark Mode and project files ✅
+Adding Fonts ✅
+Navbar Component
+Setup Contentlayer
+How to render a Blog
+Creating Home Cover Section
+Featured Posts Component
+Recent Posts Component
+Footer Component
+Blog Page
+Creating TOC Component
+Category Page
+About page
+Contact page
+Insights Component
+Store blog views using Supabase
+Adding SEO
+Adding Dark Mode
+Making it Responsive
+Adding Sitemap
+Image Optimization
+Adding Favicon and manifest file
+Adding google's structured json-ld for SEO
