@@ -4,11 +4,11 @@ Intro + Demo ✅
 Setup and Installation ✅
 Tailwind CSS Setup, Dark Mode and project files ✅
 Adding Fonts ✅
-Navbar Component
-Setup Contentlayer
-How to render a Blog
-Creating Home Cover Section
-Featured Posts Component
+Navbar Component ✅
+Setup Contentlayer ✅
+How to render a Blog ✅
+Creating Home Cover Section ✅
+Featured Posts Component ✅
 Recent Posts Component
 Footer Component
 Blog Page
