@@ -9,8 +9,8 @@ Setup Contentlayer ✅
 How to render a Blog ✅
 Creating Home Cover Section ✅
 Featured Posts Component ✅
-Recent Posts Component
-Footer Component
+Recent Posts Component ✅
+Footer Component ✅
 Blog Page
 Creating TOC Component
 Category Page
