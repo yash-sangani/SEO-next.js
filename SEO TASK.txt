@@ -14,7 +14,7 @@ Footer Component ✅
 Blog Page ✅
 Creating TOC Component ✅
 Category Page ✅
-About page
+About page ✅
 Contact page
 Insights Component
 Store blog views using Supabase
