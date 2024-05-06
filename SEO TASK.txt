@@ -17,7 +17,7 @@ Category Page ✅
 About page ✅
 Contact page ✅
 Insights Component ✅
-Store blog views using Supabase
+Store blog views using Supabase ✅
 Adding SEO
 Adding Dark Mode
 Making it Responsive
