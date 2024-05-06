@@ -16,7 +16,7 @@ Creating TOC Component ✅
 Category Page ✅
 About page ✅
 Contact page ✅
-Insights Component
+Insights Component ✅
 Store blog views using Supabase
 Adding SEO
 Adding Dark Mode

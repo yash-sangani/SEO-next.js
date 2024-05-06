@@ -15,9 +15,9 @@ const RecentPost = ({ blogs }) => {
      </div>
      <div className="grid grid-cols-3 grid-rows-2 gap-16 mt-16">
         {
-            sortedBlogs.slice(5, 11).map((blog, index) => {
-                // eslint-disable-next-line react/jsx-key
-                return <article className="col-span-1 row-span-1 relative"> <BloglayoutThree blog={blog}/> </article>
+            sortedBlogs.slice(4, 10).map((blog, index) => {
+                
+                return <article key={index} className="col-span-1 row-span-1 relative"> <BloglayoutThree blog={blog}/> </article>
             })
         }
      </div>
