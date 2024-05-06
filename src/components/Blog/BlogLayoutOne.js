@@ -2,6 +2,7 @@ import React from "react";
 import Tag from "../Elements/Tag";
 import Link from "next/link";
 import Image from "next/image";
+import { slug } from "github-slugger";
 
 const BlogLayoutOne = ({blog}) => {
   return (
@@ -17,7 +18,7 @@ const BlogLayoutOne = ({blog}) => {
         className="w-full h-full object-center object-cover rounded-xl group-hover:scale-105 transition-all ease duration-300"
       />
       <div className="absolute bottom-0 p-10 w-full z-20">
-        <Tag className="px-6 text-sm py-2 !border" link={`/categories/${blog.tags[0]}`} name={blog.tags[0]} />
+        <Tag className="px-6 text-sm py-2 !border" link={`/categories/${slug(blog.tags[0])}`} name={blog.tags[0]} />
         <Link href={blog.url} className="mt-6">
           <h2 className="font-bold capitalize text-2xl text-light mt-4">
             <span className="bg-gradient-to-r from-accent to-accent bg-[length:0px_6px] group-hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500">

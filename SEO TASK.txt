@@ -11,9 +11,9 @@ Creating Home Cover Section ✅
 Featured Posts Component ✅
 Recent Posts Component ✅
 Footer Component ✅
-Blog Page
-Creating TOC Component
-Category Page
+Blog Page ✅
+Creating TOC Component ✅
+Category Page ✅
 About page
 Contact page
 Insights Component
