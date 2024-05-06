@@ -1,8 +1,15 @@
+"use client"
+
 import Link from "next/link"
 import Logo from "./Logo"
 import { DribbbleIcon, GithubIcon, LinkedinIcon, SunIcon, TwitterIcon } from "../icons"
+import siteMetadata from "@/src/utils/siteMetaDate"
+import { useThemeSwitch } from "../Hooks/useThemeSwitch"
 
 const Header = () => {
+  
+  const [mode, setMode] = useThemeSwitch();
+
   return (
     <header className="w-full p-4 px-10 flex items-center justify-between ">
         <Logo />
@@ -10,13 +17,13 @@ const Header = () => {
             <Link href='/' className="mr-2">Home</Link>
             <Link href='/about'  className="mx-2">About</Link>
             <Link href='/contact'  className="mx-2">Contact</Link>
-            <button><SunIcon /></button>
+            <button onClick={() => setMode(mode === "light" ? "dark" : "light")}><SunIcon /></button>
         </nav>
         <div>
-           <a href="#" className="inline-block w-6 h-6 mr-4 hover:scale-125 transition-all ease duration-200"><LinkedinIcon className=""/></a>
-           <a href="#" className="inline-block w-6 h-6 mr-4 hover:scale-125 transition-all ease duration-200"><TwitterIcon className=""/></a>
-           <a href="#" className="inline-block w-6 h-6 mr-4 hover:scale-125 transition-all ease duration-200"><GithubIcon className=""/></a>
-           <a href="#" className="inline-block w-6 h-6 mr-4 hover:scale-125 transition-all ease duration-200"><DribbbleIcon className=""/></a>
+           <a href={siteMetadata.linkedin} className="inline-block w-6 h-6 mr-4 hover:scale-125 transition-all ease duration-200"><LinkedinIcon className=""/></a>
+           <a href={siteMetadata.twitter} className="inline-block w-6 h-6 mr-4 hover:scale-125 transition-all ease duration-200"><TwitterIcon className=""/></a>
+           <a href={siteMetadata.github} className="inline-block w-6 h-6 mr-4 hover:scale-125 transition-all ease duration-200"><GithubIcon className=""/></a>
+           <a href={siteMetadata.dribbble} className="inline-block w-6 h-6 mr-4 hover:scale-125 transition-all ease duration-200"><DribbbleIcon className=""/></a>
         </div>
     </header>
   )

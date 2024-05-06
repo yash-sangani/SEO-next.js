@@ -18,10 +18,10 @@ About page ✅
 Contact page ✅
 Insights Component ✅
 Store blog views using Supabase ✅
-Adding SEO
-Adding Dark Mode
-Making it Responsive
-Adding Sitemap
-Image Optimization
-Adding Favicon and manifest file
-Adding google's structured json-ld for SEO
+Adding SEO ✅
+Adding Dark Mode ✅
+Making it Responsive ✅
+Adding Sitemap ✅
+Image Optimization ✅
+Adding Favicon and manifest file ✅
+Adding google's structured json-ld for SEO ✅

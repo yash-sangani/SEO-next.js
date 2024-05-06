@@ -1,27 +1,35 @@
 import { allBlogs } from "@/.contentlayer/generated";
 import BlogLayoutThree from "@/src/components/Blog/BloglayoutThree";
 import Categories from "@/src/components/Blog/Categories";
-import GithhubSlugger,{ slug } from "github-slugger";
+import GithhubSlugger, { slug } from "github-slugger";
 
-const slugger = new GithhubSlugger()
-export async function generateStaticParams(){
-   
-    const Categories = [];
-    const paths = [{slug:"all"}]
+const slugger = new GithhubSlugger();
+export async function generateStaticParams() {
+  const Categories = [];
+  const paths = [{ slug: "all" }];
 
-    allBlogs.map(blog => {
-        if (blog.isPublished) {
-            blog.tags.map(tag => {
-                let slugified = slugger.slug(tag);
-                if(!Categories.includes(slugified)){
-                    Categories.push(slugified)
-                    paths.push({slug: slugified})
-                }
-            })
+  allBlogs.map((blog) => {
+    if (blog.isPublished) {
+      blog.tags.map((tag) => {
+        let slugified = slugger.slug(tag);
+        if (!Categories.includes(slugified)) {
+          Categories.push(slugified);
+          paths.push({ slug: slugified });
         }
-    })
+      });
+    }
+  });
 
-    return paths;
+  return paths;
+}
+
+export async function generateMatadata({ params }) {
+  return {
+    title: `${params.slug.replaceAll("-", " ")} Blogs`,
+    description: `Learn more about ${
+      params.slug === "all" ? "web development" : params.slug
+    } through our collection of export blogs and tutorials`,
+  };
 }
 
 const CategoryPage = ({ params }) => {
