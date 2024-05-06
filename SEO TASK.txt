@@ -15,7 +15,7 @@ Blog Page ✅
 Creating TOC Component ✅
 Category Page ✅
 About page ✅
-Contact page
+Contact page ✅
 Insights Component
 Store blog views using Supabase
 Adding SEO
