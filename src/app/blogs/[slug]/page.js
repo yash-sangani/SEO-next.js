@@ -47,7 +47,7 @@ export default function BlogPage({ params }) {
                       {
                         heading.level === "three" ? <span className="flex w-1 h-1 rounded-full bg-dark mr-2">&nbsp;</span> : null
                        }
-                      <span>{heading.text}</span></a>
+                      <span className="hover:underline">{heading.text}</span></a>
                   </li>
                 })
               }
