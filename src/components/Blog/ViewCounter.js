@@ -26,19 +26,18 @@ const ViewCounter = ({ slug, noCount = false, showCount = true }) => {
       }
     };
     if (!noCount) {
-        incrementview();
+      incrementview();
     }
   }, [slug, noCount]);
 
   useEffect(() => {
     const getViews = async () => {
       try {
-       
-let { data, error } = await supabase
-.from('view')
-.select('count')
-.match({slug: slug})
-.single()
+        let { data, error } = await supabase
+          .from("view")
+          .select("count")
+          .match({ slug: slug })
+          .single();
 
         if (error) {
           console.error(
@@ -46,7 +45,7 @@ let { data, error } = await supabase
             error
           );
         }
-        setView(data ? data.count : 0)
+        setView(data ? data.count : 0);
       } catch (error) {
         console.log(
           "An error occurred while incrementing the view count:",
@@ -54,10 +53,10 @@ let { data, error } = await supabase
         );
       }
     };
-    
-        getViews();
-    
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+
+    getViews();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [slug]);
 
   if (showCount) {

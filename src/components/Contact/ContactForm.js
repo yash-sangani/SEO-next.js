@@ -39,7 +39,7 @@ export default function ContactForm() {
       placeholder="My project is about..."
       rows={3}
        className="w-full outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-lg border-b border-gray focus:border-gray bg-transparent"/>
-      <input type="submit" value="send request" className="mt-8 font-medium inline-block capitalize text-xl py-3 px-8 border-2 border-solid border-dark rounded cursor-pointer"/>
+      <input type="submit" value="send request" className="mt-8 font-medium inline-block capitalize text-xl py-3 px-8 border-2 border-solid border-dark dark:border-light rounded cursor-pointer"/>
     </form>
   );
 }

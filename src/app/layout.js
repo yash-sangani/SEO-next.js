@@ -63,7 +63,6 @@ export default function RootLayout({ children }) {
           manrope.variable,
           "font-mr bg-light dark:bg-dark"
         )}
-      // eslint-disable-next-line react/jsx-no-comment-textnodes
       >
         <Script>
           {`if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
